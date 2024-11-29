@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación Estudiantil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votación Estudiantil</h1>
+        <p>Selecciona a tu candidato preferido:</p>
 
+        <!-- Equipo 1: Tu voz, tu futuro -->
+        <div class="team">
+            <h2>Tu Voz, Tu Futuro</h2>
+            <img src="tu_voz_futuro.png" alt="Tu Voz, Tu Futuro" class="team-image">
+            <ul>
+                <li><b>Alcalde:</b> Nahomi Edith Padilla Quispe</li>
+                <li><b>Teniente Alcalde:</b> Camila Belinda Huapaya Ávalos</li>
+                <li><b>Regidor de Educación:</b> Jeancarlo Santiago Catqui Mendoza</li>
+                <li><b>Regidor de Salud:</b> Maycol Guevara Vega</li>
+                <li><b>Regidor de Emprendimiento:</b> Camila Belén Espinoza Girón</li>
+                <li><b>Regidor de Derechos:</b> Sofía de los Ángeles Salazar Rivas</li>
+                <li><b>Regidor de Comunicación:</b> Phol Claudio Mendoza Quispe</li>
+            </ul>
+            <button onclick="vote('Tu Voz, Tu Futuro')">Votar</button>
+        </div>
+
+        <!-- Equipo 2: Somos la respuesta -->
+        <div class="team">
+            <h2>Somos la Respuesta</h2>
+            <img src="somos_la_respuesta.png" alt="Somos la Respuesta" class="team-image">
+            <ul>
+                <li><b>Alcalde:</b> Quispe Caycho Analí Marlene</li>
+                <li><b>Teniente Alcalde:</b> Chávez Seminario Ariana Analí</li>
+                <li><b>Regidor de Educación:</b> Ramos Rodríguez Freddy Antonio</li>
+                <li><b>Regidor de Salud:</b> Blas Mallqui Jack Raúl</li>
+                <li><b>Regidor de Emprendimiento:</b> Rodríguez Falcon Samira</li>
+                <li><b>Regidor de Derechos:</b> Quispe Canales Ariana Rafaela</li>
+                <li><b>Regidor de Comunicación:</b> Rivera Martínez Jhosue</li>
+            </ul>
+            <button onclick="vote('Somos la Respuesta')">Votar</button>
+        </div>
+
+        <!-- Equipo 3: Proyecto Rubí -->
+        <div class="team">
+            <h2>Proyecto Rubí</h2>
+            <img src="proyecto_rubi.png" alt="Proyecto Rubí" class="team-image">
+            <ul>
+                <li><b>Alcalde:</b> Jhon Farid Garriazo Quispe</li>
+                <li><b>Teniente Alcalde:</b> Saori Jatsumy Navarro Mendoza</li>
+                <li><b>Regidor de Educación:</b> Romina Valentina Zabaleta Espinoza</li>
+                <li><b>Regidor de Emprendimiento:</b> Moryhori Anamile Cocha Bravo</li>
+                <li><b>Regidor de Derechos:</b> Freddgalis María Ramos Rodríguez</li>
+            </ul>
+            <button onclick="vote('Proyecto Rubí')">Votar</button>
+        </div>
+
+        <!-- Sección de resultados protegida -->
+        <div id="adminSection" style="display:none;">
+            <h2>Resultados de la Votación</h2>
+            <p id="results"></p>
+        </div>
+
+        <input type="password" id="adminPassword" placeholder="Contraseña de Administrador">
+        <button onclick="showResults()">Ver Resultados</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
